@@ -19,43 +19,32 @@ permalink: /pages/about.html
 	<br>
     <div class="skills">
    	<div id="main" style="height:400px"></div>
-
-
-
-    <!--
         <div class="skillbar clearfix" data-percent="80%">
             <div class="skillbar-title"><span>Java</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">80%</div>
         </div>
-
         <div class="skillbar clearfix" data-percent="60%">
             <div class="skillbar-title"><span>Python</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">80%</div>
         </div>
-		
         <div class="skillbar clearfix" data-percent="60%">
             <div class="skillbar-title"><span>爬虫</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
-
         <div class="skillbar clearfix" data-percent="60%">
             <div class="skillbar-title"><span>JFinal</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
-		
 		<div class="skillbar clearfix" data-percent="60%">
             <div class="skillbar-title"><span>深度学习</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
-		-->
     </div>	
-
-	
 	<br>
 	<h3><i class="fa fa-user"></i>&nbsp;基本信息</h3>
 	<hr>
@@ -73,7 +62,6 @@ permalink: /pages/about.html
 			<td>吉林大学-计算机科学与技术学院-计算机应用技术专业</td>
 		</tr>
 	</table>
-
 	<br>
 	<h3><i class="fa fa-phone-square"></i>&nbsp;联系方式</h3>
 	<hr>
@@ -86,7 +74,6 @@ permalink: /pages/about.html
 				itwangye@163.com			
 			</td>
 		</tr>
-
 		<tr>
 			<td>
 				github：
@@ -95,10 +82,7 @@ permalink: /pages/about.html
 				<a href="{{ site.author.github }}" target="_blank">github.com/wangye8899</a>
 			</td>  
 		</tr>
-
 	</table>
-
-
 	<br>
 	<h3><i class="fa fa-info-circle"></i>&nbsp;个人简介</h3>
 	<hr>
@@ -107,7 +91,6 @@ permalink: /pages/about.html
 	本科就读于大连海事大学软件工程专业，大三下学期选择考研，最终考入吉林大学计算机学院计算机应用技术专业，是学术型硕士研究生。目前在吉林大学机器学习实验室学习，师从周柚老师，研究方向包括基于深度学习的雷达信号分选、图神经网络、图卷积网络等。
 	</p>
 	<br>
-
 	<h3><i class="fa fa-heart"></i>&nbsp;我最爱的一句话</h3>
 	<hr>
 	<br>
@@ -119,7 +102,6 @@ permalink: /pages/about.html
 	<br>
 
 </div>
-
 
 <div>
 {% include duoshuo.html %}
