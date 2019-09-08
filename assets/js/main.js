@@ -115,7 +115,7 @@ function pajx_loadDuoshuo(){
 function pjax_loadChart(){
 		require.config({
             paths: {
-                echarts: 'http://echarts.baidu.com/build/dist'
+                echarts: 'https://echarts.baidu.com/build/dist'
             }
         });
         
