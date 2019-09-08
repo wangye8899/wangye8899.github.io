@@ -142,7 +142,7 @@ function pjax_loadChart(){
 				    legend: {
 				        orient : 'vertical',
 				        x : 'left',
-				        data:['java','javascript','html','css','c++','data mining']
+				        data:['Python','Java','JFinal','爬虫','Tensorflow','深度学习','Graph Network']
 				    },
 				    toolbox: {
 				        show : false,
@@ -173,12 +173,13 @@ function pjax_loadChart(){
 				            radius : '55%',
 				            center: ['50%', '60%'],
 				            data:[
-				                {value:90, name:'java'},
-				                {value:60, name:'javascript'},
-				                {value:65, name:'html'},
-				                {value:65, name:'css'},
-				                {value:70, name:'c++'},
-				                {value:60, name:'data mining'}
+				                {value:90, name:'Python'},
+				                {value:60, name:'Java'},
+				                {value:65, name:'JFinal'},
+				                {value:65, name:'爬虫'},
+				                {value:70, name:'Tensorflow'},
+								{value:60, name:'深度学习'},
+								{value:60, name:'Graph Network'}
 				            ]
 				        }
 				    ]

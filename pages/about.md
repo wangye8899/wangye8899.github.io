@@ -19,42 +19,6 @@ permalink: /pages/about.html
 	<br>
     <div class="skills">
    	<div id="main" style="height:400px"></div>
-
-
-
-    <!--
-        <div class="skillbar clearfix" data-percent="80%">
-            <div class="skillbar-title"><span>Java</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">80%</div>
-        </div>
-
-        <div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>Python</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">80%</div>
-        </div>
-		
-        <div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>爬虫</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">60%</div>
-        </div>
-
-        <div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>JFinal</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">60%</div>
-        </div>
-		
-		<div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>深度学习</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">60%</div>
-        </div>
-		-->
-    </div>	
-
 	
 	<br>
 	<h3><i class="fa fa-user"></i>&nbsp;基本信息</h3>
