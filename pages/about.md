@@ -10,8 +10,7 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	博客用<a href="http://jekyllrb.com/"><code>jekyll</code></a>（可将纯文本转化为静态网站和博客的语言）,<code>html</code>,<code>css</code>等构建。博客部署在<code>github</code>服务器上，前端采用<code>bootstrap</code>栅格式布局，可自适应移动端浏览器。
-	写博客的目的很单纯，就是记笔记，方便在不同终端上随时查看，偶尔也会记录身边发生的事情。
+	建立个人博客的目的是希望找到一个属于自己的空间，写所想，写所悟。
 	</p>
 	<br>
 	
@@ -31,25 +30,25 @@ permalink: /pages/about.html
         </div>
 
         <div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>C++</span></div>
+            <div class="skillbar-title"><span>Python</span></div>
             <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">60%</div>
+            <div class="skill-bar-percent">80%</div>
         </div>
 		
         <div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>java script</span></div>
+            <div class="skillbar-title"><span>爬虫</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
 
         <div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>HTML</span></div>
+            <div class="skillbar-title"><span>JFinal</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
 		
 		<div class="skillbar clearfix" data-percent="60%">
-            <div class="skillbar-title"><span>CSS</span></div>
+            <div class="skillbar-title"><span>深度学习</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
@@ -63,15 +62,15 @@ permalink: /pages/about.html
 	<table class="table table-striped">
 		<tr>
 			<td>姓  名：</td>    
-			<td>高  扬 （1991）</td>
+			<td>王  冶（1996）</td>
 		</tr>
 		<tr>
 			<td>学  历：</td>    
 			<td>研究生</td>
 		</tr>
 		<tr>
-			<td>学  校：</td>    
-			<td>南京大学计算机科学技术系</td>
+			<td>学  校-学  院-专  业：</td>    
+			<td>吉林大学-计算机科学与技术学院-计算机应用技术专业</td>
 		</tr>
 	</table>
 
@@ -84,7 +83,7 @@ permalink: /pages/about.html
 				Email：
 			</td>  
 			<td>
-				gycoderhh@gmail.com			
+				itwangye@163.com			
 			</td>
 		</tr>
 
@@ -93,18 +92,10 @@ permalink: /pages/about.html
 				github：
 			</td>  
 			<td>
-				<a href="{{ site.author.github }}" target="_blank">github.com/BladeMasterCoder</a>
+				<a href="{{ site.author.github }}" target="_blank">github.com/wangye8899</a>
 			</td>  
 		</tr>
 
-		<tr>
-			<td>
-				微博：
-			</td> 
-			<td>
-				<a href="{{ site.author.weibo }}" target="_blank">weibo.com/u/2344559062</a>
-			</td> 
-		</tr>
 	</table>
 
 
@@ -113,15 +104,15 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	在校学生，一只码农，喜欢跑步，经常游泳，立志要为彰显码农正面形象做出贡献。
+	本科就读于大连海事大学软件工程专业，大三下学期选择考研，最终考入吉林大学计算机学院计算机应用技术专业，是学术型硕士研究生。目前在吉林大学机器学习实验室学习，师从周柚老师，研究方向包括基于深度学习的雷达信号分选、图神经网络、图卷积网络等。
 	</p>
 	<br>
 
-	<h3><i class="fa fa-heart"></i>&nbsp;人生理想</h3>
+	<h3><i class="fa fa-heart"></i>&nbsp;我最爱的一句话</h3>
 	<hr>
 	<br>
 	<p>
-	世界这么大 到处去看看
+	贵有恒，何必三更起五更睡,最无益，只怕一日曝十日寒。
 	</p>
 	<br>
 	<br> 
