@@ -14,7 +14,7 @@ highlighter: rouge
 author: 
   name: 王野
   email: itwangye@163.com
-  link: http://wangye8899.github.io/
+  link: https://wangye8899.github.io/
   github: https://github.com/wangye8899
   github_username:  wangye8899
 
@@ -24,7 +24,7 @@ description:
   一不小心迈入计算机行业，在程序猿的道路上艰难地前行，目标是成
   为一名优秀的全栈工程师或者说资深码农。对很多东西都充满兴趣，
   跑步游泳，近期目标是能跑半程马拉松，学会自由泳。
-url: http://wangye8899.github.io/
+url: https://wangye8899.github.io/
 rss_url: /feed.xml
 
 # gavatar头像及Favicon
