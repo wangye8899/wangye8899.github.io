@@ -1,13 +1,13 @@
 ---
 layout: default
-title: 读书
+title: 论文
 permalink: /pages/read.html
 ---
 
 <div class="home">
 	<div class="bookpiclist">
 		{% for page in site.posts %}
-				{% if page.categories[0] == '读书' %}
+				{% if page.categories[0] == '论文' %}
 					{% for book in page.books %}
 					<div class="bookpic">
 						<div class="bookpic-wrapper">	
