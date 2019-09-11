@@ -17,9 +17,6 @@ description: 在阅读完有关于图神经网络、图卷积神经网络相关�
 
 那么不具备网格结构的数据是什么数据呢？没错，这样的数据被称为 *“the data of Non-Euclidean domain”* ,非欧式域的数据。下面我列举了几种非欧式数据的例子：
 
-<!-- <center> -->
-
-<div align= center>
 
 ![社交网络](https://ws1.sinaimg.cn/large/006CCxP6gy1g6urgp7jlfj30ae03raa2.jpg)
 
@@ -33,8 +30,7 @@ description: 在阅读完有关于图神经网络、图卷积神经网络相关�
 
 图3 论文引用网络
 
-</div>
-<!-- </center> -->
+
 
 从图上数便可以看出，每一个数据的结构都是基于图结构的(包括节点和边)，那么类似于这样的数据，直观上便可以看出，不具备网格结构。那么这样的数据是无法直接应用CNN的，原因有很多，最主要的原因是，对于图上的每个节点，所使用的卷积核都不会是相同的。那么，这样的数据应该使用什么模型呢？GraphCNN。
 
@@ -56,12 +52,12 @@ $$
 f*g = \int_{-\infty}^{+\infty}f(x)g(y-x)dx
 $$
 那么从这个公式便可以知道，以前总讨论的卷积(尤指图片上的卷积操作)，只不过是在离散点数据上做乘积然后再做加法。如下图：
-<center>
+
 
 ![](https://pic1.zhimg.com/50/v2-15fea61b768f7561648dbea164fcb75f_hd.webp)
 
 图4 二维卷积操作
-</center>
+
 
 而把定义域扩大至实数，那么对于这种累加操作也就可以使用积分定义。所以上图的卷积只不过是公式定义ed其中一种子形式。
 
@@ -78,12 +74,12 @@ $$
 其中$\hat{f}(\omega)$是傅里叶变换后的结果，成为频谱。
 
 傅里叶变换特性中包含卷积特性，这个性质对于在Graph domain中应用Convolution非常重要。维基百科中对于卷积特性是这样定义的：
-<center>
+
 
 ![深度截图_选择区域_20190911100435.png](https://ws1.sinaimg.cn/large/006CCxP6gy1g6vcnl2ho1j319a068407.jpg)
 图5 傅里叶变换的卷积特性
 
-</center>
+
 
 
 简言之，就是两个函数的卷积的傅里叶变换频谱相当于傅里叶域中这两个函数经过傅里叶变换后
@@ -105,25 +101,24 @@ $$
 > How to get the Fourier transform of f and g in the graph domain
 
 图傅里叶变换在维基百科上是这样定义的。
-<center>
+
 
 ![深度截图_选择区域_20190911103813.png](https://ws1.sinaimg.cn/large/006CCxP6gy1g6vdmb0tbdj31550j3tbf.jpg)
 
 图6 维基百科定义的图傅里叶变换
 
-</center>
 
 这里面，接触到了图的拉普拉斯矩阵。可以看到，上图中拉普拉斯矩阵的定义为：
 $$
 L = D - W 
 $$
 其中D表示图的度矩阵，W表示图的邻接矩阵。下图为例：
-<center>
+
 
 ![深度截图_选择区域_20190911104453.png](https://ws1.sinaimg.cn/large/006CCxP6ly1g6vdt9hux9j31450bkmz8.jpg)
 图7 $L = D - W$ 无向图拉普拉斯矩阵示例
 
-</center>
+
 那么我们可以发现，这样定义的拉普拉斯矩阵为对称矩阵。但在论文中，拉普拉斯矩阵的定义并不仅限于此，论文中使用的图拉普拉斯矩阵的定义如下：
 
 $$
@@ -143,16 +138,18 @@ $$
 好，我们从线性代数的角度进行分析：
 
 $U$是L矩阵经过特征分解后得到的特征向量，
-$
+$$
 \left(\begin{array}{cccc}{\lambda_{1}} \\ {} & {} & {\ddots} \\ {} & {} & {} & {\lambda_{n}}\end{array}\right)
-$
+$$
 是特征向量对应的特征值。
 
 那么根据图6可知，$U^T$便等同于$U^{-1}$(线性代数正交矩阵基本知识)。此时，$U^T$便定义为此Graph上的图论傅里叶转换矩阵。那么对于向量:
 $$
 s=\left(s_{1}, s_{2}, \ldots s_{N}\right)^{T}
 $$
+
 $s_k$表示graph定点k的信号值。它的图论傅里叶变换为：
+
 $$
 \hat{s}=U^{-1}s=U^{T}s
 $$
@@ -178,11 +175,12 @@ f*g =  F^{-1}(F(f)F(g))
 $$
 那么在已知两个函数的傅里叶变换后，如何求解卷积呢？很简单，如上公式所示:
 
-<u>*\__只需要对频谱的乘积取逆即可__*</u>
+*_只需要对频谱的乘积取逆即可_*
 $$
 f*g =  F^{-1}(F(f)F(g))=U(U^{-1}fU^{-1}g)=
 \mathbf{U}\left(\mathbf{U}^{T} \mathbf{f} \odot \mathbf{U}^{T} \mathbf{g}\right)
 $$
+
 $\odot$表示[*Hadamard*积](https://en.wikipedia.org/wiki/Hadamard_product_(matrices))。
 
 ## 总结
