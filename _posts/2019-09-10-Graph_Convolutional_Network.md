@@ -19,16 +19,13 @@ description: 在阅读完有关于图神经网络、图卷积神经网络相关�
 
 <center>
 
-
 ![社交网络](https://ws1.sinaimg.cn/large/006CCxP6gy1g6urgp7jlfj30ae03raa2.jpg)
 
 图1 社交网络
 
-
 ![3.jpeg](https://ws1.sinaimg.cn/large/006CCxP6ly1g6uriydy35j308504smx6.jpg)
 
 图2 生物基因
-
 
 ![2.jpeg](https://ws1.sinaimg.cn/large/006CCxP6ly1g6urjh6i8vj308k04kdfs.jpg)
 
@@ -58,12 +55,10 @@ $$
 那么从这个公式便可以知道，以前总讨论的卷积(尤指图片上的卷积操作)，只不过是在离散点数据上做乘积然后再做加法。如下图：
 <center>
 
-
 ![](https://pic1.zhimg.com/50/v2-15fea61b768f7561648dbea164fcb75f_hd.webp)
 
 图4 二维卷积操作
 </center>
-
 
 而把定义域扩大至实数，那么对于这种累加操作也就可以使用积分定义。所以上图的卷积只不过是公式定义ed其中一种子形式。
 
@@ -84,6 +79,7 @@ $$
 
 ![深度截图_选择区域_20190911100435.png](https://ws1.sinaimg.cn/large/006CCxP6gy1g6vcnl2ho1j319a068407.jpg)
 图5 傅里叶变换的卷积特性
+
 </center>
 
 
@@ -111,6 +107,7 @@ $$
 ![深度截图_选择区域_20190911103813.png](https://ws1.sinaimg.cn/large/006CCxP6gy1g6vdmb0tbdj31550j3tbf.jpg)
 
 图6 维基百科定义的图傅里叶变换
+
 </center>
 
 这里面，接触到了图的拉普拉斯矩阵。可以看到，上图中拉普拉斯矩阵的定义为：
@@ -122,6 +119,7 @@ $$
 
 ![深度截图_选择区域_20190911104453.png](https://ws1.sinaimg.cn/large/006CCxP6ly1g6vdt9hux9j31450bkmz8.jpg)
 图7 $L = D - W$ 无向图拉普拉斯矩阵示例
+
 </center>
 那么我们可以发现，这样定义的拉普拉斯矩阵为对称矩阵。但在论文中，拉普拉斯矩阵的定义并不仅限于此，论文中使用的图拉普拉斯矩阵的定义如下：
 
