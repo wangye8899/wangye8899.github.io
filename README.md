@@ -1,6 +1,7 @@
 ### 我的博客
 
-地址：[http://blademastercoder.github.io/](http://blademastercoder.github.io/)
+源地址：[http://blademastercoder.github.io/](http://blademastercoder.github.io/)
+本人fork借用。
 
 ### 安装说明
 
