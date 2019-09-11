@@ -11,7 +11,7 @@ description: 在阅读完有关于图神经网络、图卷积神经网络相关�
 
 对于Graph Convolution Network,我也是第一次接触，再看了几篇论文之后(准确的说应该是一片Survey和维基百科的内容)，终于对图卷积神经网络有了一些认识，并且也逐渐熟悉了其中蕴含的数学道理。不过古语有云“纸上得来终觉浅，绝知此事要躬行”，还是把自己的所得记录下来，形成文字。
 
-## CNN和GraphCNN
+## CNN和GraphCNN_
 
 众所周知，CNN作为基本的神经网络，其应用范围很广泛，包括图片、语音、语句，当然这些数据也对应着各自的任务，比如图片分类，语音识别，自然语言处理等。我们把包括图片、语音等这样的数据称为 *“the data of Euclidean domain”*，中文为： *欧几里得域的数据*。那么什么欧式数据呢？其实简单的对其进行概括和总结：就是是数据表示具有网格结构的数据,the data representatiion have a grid structure。那么CNN便可以通过卷积核的卷积运算充分的提取数据的特征，用作下一步模型的操作。但是，如果数据不具备这样的网格结构，CNN还适用吗？答案是否。
 
@@ -32,6 +32,7 @@ description: 在阅读完有关于图神经网络、图卷积神经网络相关�
 ![2.jpeg](https://ws1.sinaimg.cn/large/006CCxP6ly1g6urjh6i8vj308k04kdfs.jpg)
 
 图3 论文引用网络
+
 </div>
 <!-- </center> -->
 
