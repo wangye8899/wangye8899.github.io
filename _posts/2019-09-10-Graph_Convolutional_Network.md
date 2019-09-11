@@ -11,7 +11,7 @@ description: 在阅读完有关于图神经网络、图卷积神经网络相关�
 
 对于Graph Convolution Network,我也是第一次接触，再看了几篇论文之后(准确的说应该是一片Survey和维基百科的内容)，终于对图卷积神经网络有了一些认识，并且也逐渐熟悉了其中蕴含的数学道理。不过古语有云“纸上得来终觉浅，绝知此事要躬行”，还是把自己的所得记录下来，形成文字。
 
-## CNN和GraphCNN_
+## CNN和GraphCNN
 
 众所周知，CNN作为基本的神经网络，其应用范围很广泛，包括图片、语音、语句，当然这些数据也对应着各自的任务，比如图片分类，语音识别，自然语言处理等。我们把包括图片、语音等这样的数据称为 *“the data of Euclidean domain”*，中文为： *欧几里得域的数据*。那么什么欧式数据呢？其实简单的对其进行概括和总结：就是是数据表示具有网格结构的数据,the data representatiion have a grid structure。那么CNN便可以通过卷积核的卷积运算充分的提取数据的特征，用作下一步模型的操作。但是，如果数据不具备这样的网格结构，CNN还适用吗？答案是否。
 
@@ -71,7 +71,7 @@ Fourier transform(傅里叶变换)是一种线性积分，用于信号处理中�
 $$
 \hat{f}(\omega)=\int_{\mathbf{R}^{n}} f(x) e^{-i \omega \cdot x} d x
 $$
-其中$\hat{f}(\omega)$是傅里叶变换后的结果，成为频谱。
+其中 $\hat{f}(\omega)$ 是傅里叶变换后的结果，成为频谱。
 
 傅里叶变换特性中包含卷积特性，这个性质对于在Graph domain中应用Convolution非常重要。维基百科中对于卷积特性是这样定义的：
 
@@ -143,12 +143,12 @@ $$
 $$
 是特征向量对应的特征值。
 
-那么根据图6可知，$U^T$便等同于$U^{-1}$(线性代数正交矩阵基本知识)。此时，$U^T$便定义为此Graph上的图论傅里叶转换矩阵。那么对于向量:
+那么根据图6可知，$U^T$ 便等同于 $U^{-1}$ (线性代数正交矩阵基本知识)。此时，$U^T$ 便定义为此Graph上的图论傅里叶转换矩阵。那么对于向量:
 $$
 s=\left(s_{1}, s_{2}, \ldots s_{N}\right)^{T}
 $$
 
-$s_k$表示graph定点k的信号值。它的图论傅里叶变换为：
+$s_k$ 表示graph定点k的信号值。它的图论傅里叶变换为：
 
 $$
 \hat{s}=U^{-1}s=U^{T}s
@@ -163,7 +163,8 @@ $$
 $$
 \hat{f}=U^{-1}f=U^{T}f
 $$
-$$ddd
+
+$$
 \hat{g}=U^{-1}g=U^{T}g
 $$
 
@@ -181,7 +182,7 @@ f*g =  F^{-1}(F(f)F(g))=U(U^{-1}fU^{-1}g)=
 \mathbf{U}\left(\mathbf{U}^{T} \mathbf{f} \odot \mathbf{U}^{T} \mathbf{g}\right)
 $$
 
-$\odot$表示[*Hadamard*积](https://en.wikipedia.org/wiki/Hadamard_product_(matrices))。
+$\odot$ 表示[*Hadamard*积](https://en.wikipedia.org/wiki/Hadamard_product_(matrices))。
 
 ## 总结
 本文介绍了如何将Convolution应用至Graph上，主要的思想就是计算相应图的拉普拉斯矩阵，并对其进行特征分解，得到的特征向量便是图傅里叶变换的转换矩阵或者成为基。在转换矩阵(基)的帮助下，对输入的信号f和卷积函数g进行傅里叶变换分别得到对应的频谱。对频谱的乘积取逆运算后得到f和g在图上的卷积结果。
