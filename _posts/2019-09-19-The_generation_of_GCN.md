@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Graph Convolutional Network
+title: 第一次组会讲解内容分享
 category: 技术
-tags: [Graph Convolutional network]
+tags: [GNN]
 description: 在阅读完有关于图神经网络、图卷积神经网络相关的论文之后，这篇post主要是对图卷积神经网络进行总结。
 ---
 <head>
